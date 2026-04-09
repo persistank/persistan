@@ -24,8 +24,8 @@ class NuageDePoints(BaseModel):
 async def calcul_persisance(donnees:NuageDePoints):
     points_np = np.array(donnees.points)
 
-    alpha_complex = gudhi.AlphaComplex(points = points_np)
-    simplex_tree = alpha_complex.create_simplex_tree()
+    complex = gudhi.RipsComplex(points = points_np)
+    simplex_tree = complex.create_simplex_tree()
     simplex_tree.compute_persistence()
 
     diagramme_brut = simplex_tree.persistence()

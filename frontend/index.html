@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--rappel à moi même : pas d'accent sur le nom des variables-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Persistan</title>
+
+    <!--PlotLy-->
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+
+    <!-- KaTex-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+    <!--CSS file - to be done-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Persistan</h2>
+        <button onclick="afficherPage('accueil')">Accueil</button>
+        <button onclick="afficherPage('complexe')">1. Complexe Simplicial</button>
+        <button onclick="afficherPage('diagramme')">2. Diagramme de Persistance</button>
+        <button onclick="afficherPage('stabilite')">3. Théorème de Stabilité</button>
+    </nav>
+
+    <main class="content">
+        <div class="page" id="accueil">
+            <h1>Bienvenue sur Persistan : outil de création et visualisation de la topologie de figures 2D</h1>
+        </div>
+        
+        <div class="page" id="complexe" style="display: none;">
+            <h1>Filtration d'un complexe simplicial</h1>
+        </div>
+
+        <div class="page" id="diagramme" style="display: none;">
+            <h1>Diagramme de persistance</h1>
+        </div>
+            
+        <div class="page" id="stabilite" style="display: none;">
+            <h1>Visualisation du théorème de stabilité</h1>
+        </div>
+    </main>
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>
