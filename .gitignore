@@ -1,0 +1,16 @@
+# Environnements virtuels
+venv/
+env/
+.conda/
+persistan_env/
+
+# Fichiers de cache Python 
+__pycache__/
+*.pyc
+
+# Fichiers de variables d'environnement 
+.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
