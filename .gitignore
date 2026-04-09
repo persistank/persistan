@@ -14,3 +14,6 @@ __pycache__/
 # Fichiers système
 .DS_Store
 Thumbs.db
+
+# Configuration dépendant de l'utilisateur
+.vscode
