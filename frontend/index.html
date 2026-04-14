@@ -8,10 +8,9 @@
     <!--PlotLy-->
     <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
 
-    <!-- KaTex-->
+    <!--KaTex-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body);"></script>
 
@@ -35,6 +34,21 @@
         
         <div class="page" id="complexe" style="display: none;">
             <h1>Filtration d'un complexe simplicial</h1>
+            
+            <canvas onclick="ajouterSimplexe()" id="filtration" width="500" height="600">
+                Contient le complexe simplicial.
+            </canvas>
+
+            <fieldset>
+                <legend>Choisissez la dimension géométrique du simplexe à ajouter</legend>
+                <input type="radio" id="0-simplexe" name="simplexe" value="0" checked/> 
+                <label>0-simplexe</label>
+                <input type="radio" id="1-simplexe" name="simplexe" value="1"/>
+                <label>1-simplexe</label>
+                <input type="radio" id="2-simplexe" name="simplexe" value="2"/>
+                <label>2-simplexe</label>
+            </fieldset>
+            
         </div>
 
         <div class="page" id="diagramme" style="display: none;">
